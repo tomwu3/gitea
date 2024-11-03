@@ -25,7 +25,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: gitea/gitea
+          images: junlinwu/gitea
           # each tag below will have the suffix of -rootless
           flavor: |
             suffix=-rootless,onlatest=true
