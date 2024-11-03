@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: linux/arm/v6,linux/arm
+          platforms: linux/arm/v6
           push: true
           file: Dockerfile.rootless
           tags: junlinwu/gitea:${{ steps.clean_name.outputs.branch }}-rootless
